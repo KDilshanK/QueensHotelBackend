@@ -1,0 +1,52 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# C# files
+*.cs text diff=csharp
+*.csx text diff=csharp
+*.cshtml text
+
+# JSON files
+*.json text
+
+# XML files
+*.xml text
+*.config text
+*.props text
+*.targets text
+*.csproj text
+*.sln text
+
+# Scripts
+*.sh text eol=lf
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+
+# Documentation
+*.md text
+*.txt text
+README text
+
+# Binary files
+*.dll binary
+*.exe binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+*.zip binary
+
+# Force batch scripts to have CRLF, even on Unix
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+
+# Force shell scripts to have LF, even on Windows
+*.sh text eol=lf
+
+# Linguist overrides for repository statistics
+*.cs linguist-language=C#
+*.cshtml linguist-language=HTML
